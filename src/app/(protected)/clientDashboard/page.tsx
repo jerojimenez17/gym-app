@@ -1,6 +1,6 @@
-import ClientDashboad from "@/components/stock/client-dashboard";
+import ClientDashboard from "../../../components/clients/client-dashboard";
 const page = () => {
-  return <ClientDashboad />;
+  return <ClientDashboard />;
 };
 
 export default page;

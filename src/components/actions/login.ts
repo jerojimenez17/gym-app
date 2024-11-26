@@ -19,6 +19,7 @@ export const login = async (values: z.infer<typeof LoginSchema>) => {
     return { error: "Email no existe" };
   }
   if (!existingUser.emailVerified) {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const verificationToken = await getVerificationTokenByEmail(email);
   }
   let resp = false;

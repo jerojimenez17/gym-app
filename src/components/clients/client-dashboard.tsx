@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import Modal from "./ui/Modal";
+import Modal from "../ui/Modal";
 import ClientForm from "./client-form";
-import StockTable from "./client-table";
-import StockFilterPanel from "./stock-filter-panel";
+import ClientFilterPanel from "./client-filter-panel";
+import ClientTable from "./client-table";
 
 const ClientDashboard = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -19,13 +19,13 @@ const ClientDashboard = () => {
       >
         <ClientForm onClose={() => setOpenModal(false)} />
       </Modal>
-      <StockFilterPanel
+      <ClientFilterPanel
         handleDescriptionFilter={(filter: string) =>
           setDescriptionFilter(filter)
         }
         handleOpenModal={() => setOpenModal(!openModal)}
       />
-      <StockTable descriptionFilter={descriptionFilter} />
+      <ClientTable descriptionFilter={descriptionFilter} />
     </div>
   );
 };

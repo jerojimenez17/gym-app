@@ -34,7 +34,7 @@ const Modal = ({
         >
           X
         </button>
-        <div className=" bg-gradient-to-tr from-blue-300 to-blue-200  mx-auto align-middle bg-opacity-50 p-2 rounded w-full h-full overflow-auto flex flex-col">
+        <div className=" bg-opacity-50 bg-red-300 mx-auto align-middle  p-2 rounded-lg w-full h-full overflow-auto flex flex-col">
           <div className="m-3 px-4 py-1 flex flex-col flex-grow mx-auto text-black font-semibold text-lg">
             {message ? message : children}
           </div>
